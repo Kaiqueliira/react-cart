@@ -1,19 +1,10 @@
-import React from "react";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import RoutesDefault from "./routes";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
-      <Routes>
-        <Route path="/about" element={<About />}></Route>
-      </Routes>
-    </Router>
+    <>
+      <RoutesDefault />
+    </>
   );
 };
 
